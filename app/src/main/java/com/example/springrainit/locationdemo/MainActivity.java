@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
                         // Got last known location. In some rare situations this can be null.
                         if (location != null) {
                             Toast.makeText(MainActivity.this, "" + location.getProvider(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "" + location.getAltitude(), Toast.LENGTH_SHORT).show();
+
                         }
                     }
                 })
